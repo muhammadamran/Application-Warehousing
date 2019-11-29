@@ -27,6 +27,8 @@ class Login extends CI_Controller {
 			if(@$cek){
 
 				$data_session = array(
+					'fullname' => $cek->nama_vendor,
+					'email' => $cek->email_vendor,
 					'nama' => $username,
 					'status' => "login",
 					'role' => $cek->user_role

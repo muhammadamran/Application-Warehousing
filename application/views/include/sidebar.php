@@ -9,7 +9,8 @@
   <div class="down">  
     <!-- <a href="#"><img src="<?php echo base_url('assets/images/admin.jpg')?>"></a> -->
     <!-- <a href="index.html"><span class=" name-caret"> <?php echo $this->session->set_userdata($data_session);['username'];?></span></a> -->
-    <a href="#"><span class=" name-caret"> <?php echo $this->session->userdata("nama"); ?></span></a>
+    <a href="#"><span class=" name-caret"> <?php echo $this->session->userdata("fullname"); ?></span></a>
+    <label><?php echo $this->session->userdata("email"); ?></label>
     <p>Sistem Informasi Pergudangan<br>PT. PERURI</p>
     <ul>
       <li><a class="tooltips" href="#"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
